@@ -5,6 +5,7 @@ const History = props => {
   const tableBody = useMemo(() => {
     return props.launches?.filter((launch) => !launch.upcoming)
       .map((launch) => {
+
         return <tr key={String(launch.flightNumber)}>
           <td>
             <span style={
@@ -15,7 +16,7 @@ const History = props => {
           <td>{new Date(launch.launchDate).toDateString()}</td>
           <td>{launch.mission}</td>
           <td>{launch.rocket}</td>
-          <td>{launch.customers?.join(", ")}</td>
+          <td>{launch.customer?.join(", ")}</td>
         </tr>;
       });
   }, [props.launches]);
