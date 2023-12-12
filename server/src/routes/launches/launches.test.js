@@ -62,7 +62,7 @@ describe("Test POST /Launch", () => {
     });
   });
 
-  test("It shuold catch invalid dates", async () => {
+  test("It should catch invalid dates", async () => {
     const response = await request(app)
       .post("/launches")
       .send(launchDataWithInvalidDate)
