@@ -12,16 +12,7 @@ function isHabitablePlanet(planet) {
     planet["koi_prad"] < 1.6
   );
 }
-/*This is how promise works
-const promise = new promise((resolve, reject)=>{
-    resolve(42)
-});
-promise.then((result)=>{
 
-})
-const result = await promise;
-console.log(result)
-*/
 function loadPlanetsData() {
   return new Promise((resolve, reject) => {
     fs.createReadStream(

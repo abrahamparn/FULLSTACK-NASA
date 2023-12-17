@@ -9,17 +9,18 @@
     "watch": "nodemon server.js",
     "start": "set PORT=5000&& node src/server.js",
     "cluster": "pm2 start src/server.js -i max",
-    "stopPM2" : "pm2 stop all"
+    "stopPM2": "pm2 stop all"
   },
   "keywords": [],
   "author": "Abraham Pardomuan Naiborhu",
   "license": "MIT",
-  "jest":{
-    "testEnvironment":"node"
+  "jest": {
+    "testEnvironment": "node"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "csv-parse": "^5.5.2",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "fullstack-nasa": "file:..",
     "morgan": "^1.10.0",
