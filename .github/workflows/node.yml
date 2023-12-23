@@ -8,6 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - run: pwd
+- run: ls -l node_modules
       - uses: actions/checkout@v2
       - name: use Node.js version 16
         uses: actions/setup-node@v2
