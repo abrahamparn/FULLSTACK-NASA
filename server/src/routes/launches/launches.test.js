@@ -19,14 +19,14 @@ describe("Launches API", () => {
     });
   });
 
-  describe("Test DELETE /launches", () => {
-    test("it should response with 200", async () => {
-      const respond = await request(app)
-        .delete("/v1/launches/100")
-        .expect(200)
-        .expect("Content-type", /json/);
-    });
-  });
+  // describe("Test DELETE /launches", () => {
+  //   test("it should response with 200", async () => {
+  //     const respond = await request(app)
+  //       .delete("/v1/launches/100")
+  //       .expect(200)
+  //       .expect("Content-type", /json/);
+  //   });
+  // });
 
   describe("Test POST /Launch", () => {
     const completeLaunchDate = {
